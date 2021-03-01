@@ -1,75 +1,155 @@
 \section{Физическое кодирование}
 \subsection{NRZ}
 \includegraphics[width=\textwidth]{1nrz}
-\begin{center}
-    \begin{tabular}{cccc}
-        $f_\mathrm{\text{в}}$, МГц & $f_\mathrm{\text{н}}$, МГц & $f_\mathrm{\text{с}}$, МГц & $S$, МГц \\
-        500.0 & 62.5 & 214.7 & 3437.5 \\
-    \end{tabular}
-\end{center}
+
+Минимальный интервал (все сообщение): $t_\mathrm{min}=1.0$ битовых интервалов
+
+Максимальный интервал (все сообщение): $t_\mathrm{max}=8.0$ битовых интервалов
+
+Максимальная частота: $f_\mathrm{max}=C\div t_\mathrm{min}=1000.0\div 2=500.0$ МГц
+
+Минимальная частота: $f_\mathrm{min}=C\div t_\mathrm{max}=1000.0\div 16=62.5$ МГц
+
+Полоса пропускания: $S=7f_\mathrm{max}-f_\mathrm{min} = 7\cdot 500.0\text{ МГц}-62.5\text{ МГц}=3437.5$ МГц
+
+Количество интервалов с одинаковым уровнем (все сообщение): $n_\mathrm{similar}=38$
+
+Время передачи сообщения: $T=88.0$ битовых интервалов
+
+Среднее: $f_0\cdot n_\mathrm{similar}\div T=1000.0\text{ МГц}\cdot 19.0\div 88.0=215.9$ МГц
 
 \subsection{RZ}
 \includegraphics[width=\textwidth]{1rz}
-\begin{center}
-    \begin{tabular}{cccc}
-        $f_\mathrm{\text{в}}$, МГц & $f_\mathrm{\text{н}}$, МГц & $f_\mathrm{\text{с}}$, МГц & $S$, МГц \\
-        1000.0 & 500.0 & 994.4 & 6500.0 \\
-    \end{tabular}
-\end{center}
+
+Минимальный интервал (все сообщение): $t_\mathrm{min}=0.5$ битовых интервалов
+
+Максимальный интервал (все сообщение): $t_\mathrm{max}=1.0$ битовых интервалов
+
+Максимальная частота: $f_\mathrm{max}=C\div t_\mathrm{min}=1000.0\div 1=1000.0$ МГц
+
+Минимальная частота: $f_\mathrm{min}=C\div t_\mathrm{max}=1000.0\div 2=500.0$ МГц
+
+Полоса пропускания: $S=7f_\mathrm{max}-f_\mathrm{min} = 7\cdot 1000.0\text{ МГц}-500.0\text{ МГц}=6500.0$ МГц
+
+Количество интервалов с одинаковым уровнем (все сообщение): $n_\mathrm{similar}=176$
+
+Время передачи сообщения: $T=88.0$ битовых интервалов
+
+Среднее: $f_0\cdot n_\mathrm{similar}\div T=1000.0\text{ МГц}\cdot 88.0\div 88.0=1000.0$ МГц
 
 \subsection{AMI}
 \includegraphics[width=\textwidth]{1ami}
-\begin{center}
-    \begin{tabular}{cccc}
-        $f_\mathrm{\text{в}}$, МГц & $f_\mathrm{\text{н}}$, МГц & $f_\mathrm{\text{с}}$, МГц & $S$, МГц \\
-        500.0 & 62.5 & 344.6 & 3437.5 \\
-    \end{tabular}
-\end{center}
+
+Минимальный интервал (все сообщение): $t_\mathrm{min}=1.0$ битовых интервалов
+
+Максимальный интервал (все сообщение): $t_\mathrm{max}=8.0$ битовых интервалов
+
+Максимальная частота: $f_\mathrm{max}=C\div t_\mathrm{min}=1000.0\div 2=500.0$ МГц
+
+Минимальная частота: $f_\mathrm{min}=C\div t_\mathrm{max}=1000.0\div 16=62.5$ МГц
+
+Полоса пропускания: $S=7f_\mathrm{max}-f_\mathrm{min} = 7\cdot 500.0\text{ МГц}-62.5\text{ МГц}=3437.5$ МГц
+
+Количество интервалов с одинаковым уровнем (все сообщение): $n_\mathrm{similar}=61$
+
+Время передачи сообщения: $T=88.0$ битовых интервалов
+
+Среднее: $f_0\cdot n_\mathrm{similar}\div T=1000.0\text{ МГц}\cdot 30.5\div 88.0=346.6$ МГц
 
 \subsection{NRZI}
 \includegraphics[width=\textwidth]{1nrzi}
-\begin{center}
-    \begin{tabular}{cccc}
-        $f_\mathrm{\text{в}}$, МГц & $f_\mathrm{\text{н}}$, МГц & $f_\mathrm{\text{с}}$, МГц & $S$, МГц \\
-        500.0 & 55.6 & 237.3 & 3444.4 \\
-    \end{tabular}
-\end{center}
+
+Минимальный интервал (все сообщение): $t_\mathrm{min}=1.0$ битовых интервалов
+
+Максимальный интервал (все сообщение): $t_\mathrm{max}=9.0$ битовых интервалов
+
+Максимальная частота: $f_\mathrm{max}=C\div t_\mathrm{min}=1000.0\div 2=500.0$ МГц
+
+Минимальная частота: $f_\mathrm{min}=C\div t_\mathrm{max}=1000.0\div 18=55.6$ МГц
+
+Полоса пропускания: $S=7f_\mathrm{max}-f_\mathrm{min} = 7\cdot 500.0\text{ МГц}-55.6\text{ МГц}=3444.4$ МГц
+
+Количество интервалов с одинаковым уровнем (все сообщение): $n_\mathrm{similar}=42$
+
+Время передачи сообщения: $T=88.0$ битовых интервалов
+
+Среднее: $f_0\cdot n_\mathrm{similar}\div T=1000.0\text{ МГц}\cdot 21.0\div 88.0=238.6$ МГц
 
 \subsection{Манчестерский код}
 \includegraphics[width=\textwidth]{1manchester}
-\begin{center}
-    \begin{tabular}{cccc}
-        $f_\mathrm{\text{в}}$, МГц & $f_\mathrm{\text{н}}$, МГц & $f_\mathrm{\text{с}}$, МГц & $S$, МГц \\
-        1000.0 & 500.0 & 785.3 & 6500.0 \\
-    \end{tabular}
-\end{center}
+
+Минимальный интервал (все сообщение): $t_\mathrm{min}=0.5$ битовых интервалов
+
+Максимальный интервал (все сообщение): $t_\mathrm{max}=1.0$ битовых интервалов
+
+Максимальная частота: $f_\mathrm{max}=C\div t_\mathrm{min}=1000.0\div 1=1000.0$ МГц
+
+Минимальная частота: $f_\mathrm{min}=C\div t_\mathrm{max}=1000.0\div 2=500.0$ МГц
+
+Полоса пропускания: $S=7f_\mathrm{max}-f_\mathrm{min} = 7\cdot 1000.0\text{ МГц}-500.0\text{ МГц}=6500.0$ МГц
+
+Количество интервалов с одинаковым уровнем (все сообщение): $n_\mathrm{similar}=139$
+
+Время передачи сообщения: $T=88.0$ битовых интервалов
+
+Среднее: $f_0\cdot n_\mathrm{similar}\div T=1000.0\text{ МГц}\cdot 69.5\div 88.0=789.8$ МГц
 
 \subsection{Дифференциальный манчестерский код}
 \includegraphics[width=\textwidth]{1manchester_diff}
-\begin{center}
-    \begin{tabular}{cccc}
-        $f_\mathrm{\text{в}}$, МГц & $f_\mathrm{\text{н}}$, МГц & $f_\mathrm{\text{с}}$, МГц & $S$, МГц \\
-        1000.0 & 250.0 & 745.9 & 6750.0 \\
-    \end{tabular}
-\end{center}
+
+Минимальный интервал (все сообщение): $t_\mathrm{min}=0.5$ битовых интервалов
+
+Максимальный интервал (все сообщение): $t_\mathrm{max}=2.0$ битовых интервалов
+
+Максимальная частота: $f_\mathrm{max}=C\div t_\mathrm{min}=1000.0\div 1=1000.0$ МГц
+
+Минимальная частота: $f_\mathrm{min}=C\div t_\mathrm{max}=1000.0\div 4=250.0$ МГц
+
+Полоса пропускания: $S=7f_\mathrm{max}-f_\mathrm{min} = 7\cdot 1000.0\text{ МГц}-250.0\text{ МГц}=6750.0$ МГц
+
+Количество интервалов с одинаковым уровнем (все сообщение): $n_\mathrm{similar}=135$
+
+Время передачи сообщения: $T=90.0$ битовых интервалов
+
+Среднее: $f_0\cdot n_\mathrm{similar}\div T=1000.0\text{ МГц}\cdot 67.5\div 90.0=750.0$ МГц
 
 \subsection{MLT-3}
 \includegraphics[width=\textwidth]{1mlt3}
-\begin{center}
-    \begin{tabular}{cccc}
-        $f_\mathrm{\text{в}}$, МГц & $f_\mathrm{\text{н}}$, МГц & $f_\mathrm{\text{с}}$, МГц & $S$, МГц \\
-        500.0 & 55.6 & 237.3 & 3444.4 \\
-    \end{tabular}
-\end{center}
+
+Минимальный интервал (все сообщение): $t_\mathrm{min}=1.0$ битовых интервалов
+
+Максимальный интервал (все сообщение): $t_\mathrm{max}=9.0$ битовых интервалов
+
+Максимальная частота: $f_\mathrm{max}=C\div t_\mathrm{min}=1000.0\div 2=500.0$ МГц
+
+Минимальная частота: $f_\mathrm{min}=C\div t_\mathrm{max}=1000.0\div 18=55.6$ МГц
+
+Полоса пропускания: $S=7f_\mathrm{max}-f_\mathrm{min} = 7\cdot 500.0\text{ МГц}-55.6\text{ МГц}=3444.4$ МГц
+
+Количество интервалов с одинаковым уровнем (все сообщение): $n_\mathrm{similar}=42$
+
+Время передачи сообщения: $T=88.0$ битовых интервалов
+
+Среднее: $f_0\cdot n_\mathrm{similar}\div T=1000.0\text{ МГц}\cdot 21.0\div 88.0=238.6$ МГц
 
 \subsection{PAM-5}
 \includegraphics[width=\textwidth]{1pam5}
-\begin{center}
-    \begin{tabular}{cccc}
-        $f_\mathrm{\text{в}}$, МГц & $f_\mathrm{\text{н}}$, МГц & $f_\mathrm{\text{с}}$, МГц & $S$, МГц \\
-        500.0 & 125.0 & 348.3 & 3375.0 \\
-    \end{tabular}
-\end{center}
+
+Минимальный интервал (все сообщение): $t_\mathrm{min}=1.0$ битовых интервалов
+
+Максимальный интервал (все сообщение): $t_\mathrm{max}=4.0$ битовых интервалов
+
+Максимальная частота: $f_\mathrm{max}=C\div t_\mathrm{min}=1000.0\div 2=500.0$ МГц
+
+Минимальная частота: $f_\mathrm{min}=C\div t_\mathrm{max}=1000.0\div 8=125.0$ МГц
+
+Полоса пропускания: $S=7f_\mathrm{max}-f_\mathrm{min} = 7\cdot 500.0\text{ МГц}-125.0\text{ МГц}=3375.0$ МГц
+
+Количество интервалов с одинаковым уровнем (все сообщение): $n_\mathrm{similar}=31$
+
+Время передачи сообщения: $T=44.0$ битовых интервалов
+
+Среднее: $f_0\cdot n_\mathrm{similar}\div T=1000.0\text{ МГц}\cdot 15.5\div 44.0=352.3$ МГц
 
 \subsection{Выбор лучшего}
 \begin{center}
@@ -78,14 +158,14 @@
         & $f_\mathrm{\text{н}}$, МГц
         & $f_\mathrm{\text{с}}$, МГц
         & $S$, МГц \\ \hline
-        NRZ               &  500.0 &  62.5 & 214.7 & 3437.5 \\
-        RZ                & 1000.0 & 500.0 & 994.4 & 6500.0 \\
-        AMI               &  500.0 &  62.5 & 344.6 & 3437.5 \\
-        NRZI              &  500.0 &  55.6 & 237.3 & 3444.4 \\
-        Манчестерский код & 1000.0 & 500.0 & 785.3 & 6500.0 \\
-        Дифф. манч. код   & 1000.0 & 250.0 & 745.9 & 6750.0 \\
-        MLT-3             &  500.0 &  55.6 & 237.3 & 3444.4 \\
-        PAM-5             &  500.0 & 125.0 & 348.3 & 3375.0 \\
+        NRZ               &  500.0 &  62.5 &  215.9 & 3437.5 \\
+        RZ                & 1000.0 & 500.0 & 1000.0 & 6500.0 \\
+        AMI               &  500.0 &  62.5 &  346.6 & 3437.5 \\
+        NRZI              &  500.0 &  55.6 &  238.6 & 3444.4 \\
+        Манчестерский код & 1000.0 & 500.0 &  789.8 & 6500.0 \\
+        Дифф. манч. код   & 1000.0 & 250.0 &  750.0 & 6750.0 \\
+        MLT-3             &  500.0 &  55.6 &  238.6 & 3444.4 \\
+        PAM-5             &  500.0 & 125.0 &  352.3 & 3375.0 \\
     \end{tabular}
 \end{center}
 
